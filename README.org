@@ -22,13 +22,9 @@ Python modules:
 import cv2
 #+END_SRC
 
-** Create or load image
+** Open image
 
-[[https://github.com/cryptokasten/python-opencv-open-a-base64-encoded-image][Python OpenCV: Open a Base64 encoded image]]
-
-#+BEGIN_SRC python
-img = ...
-#+END_SRC
+[[https://github.com/cryptokasten/python-opencv-read-image][Python OpenCV: Read image]]
 
 ** File name
 
