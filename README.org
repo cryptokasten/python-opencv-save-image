@@ -1,0 +1,45 @@
+#+TITLE: Python OpenCV: Save image
+#+TAGS: cryptokasten, opencv, base64, python
+#+PROPERTY: header-args:sh :session *shell python-opencv-save-image sh* :results silent raw
+#+PROPERTY: header-args:python :session *shell python-opencv-save-image python* :results silent raw
+#+OPTIONS: ^:nil
+
+[[https://github.com/cryptokasten][file:https://img.shields.io/badge/dynamic/json.svg?url=https://api.github.com/users/cryptokasten&label=Cryptokasten&query=$.public_repos]]
+
+** System environment
+
+- Python 3.7.0
+
+Python modules:
+
+- opencv-python==4.4.0.44
+
+** Imports
+
+#+BEGIN_SRC python
+import cv2
+#+END_SRC
+
+** Create or load image
+
+[[https://github.com/cryptokasten/python-opencv-open-a-base64-encoded-image][Python OpenCV: Open a Base64 encoded image]]
+
+#+BEGIN_SRC python
+img = ...
+#+END_SRC
+
+** File name
+
+#+BEGIN_SRC python
+fn = "image.png"
+#+END_SRC
+
+** Write image to the file
+
+#+BEGIN_SRC python
+cv2.imwrite(fn, img) 
+#+END_SRC
+
+** References
+
+1. https://docs.opencv.org/4.4.0/d4/da8/group__imgcodecs.html#gabbc7ef1aa2edfaa87772f1202d67e0ce
